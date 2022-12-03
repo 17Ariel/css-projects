@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-wrapper">
+        <span class="childs"></span>
+        <span class="childs"></span>
+        <span class="childs"></span>
+    </div>
+    <script>
+        const menu=document.getElementsByClassName('menu-wrapper')[0];
+        const span1=document.getElementsByTagName('span')[0];
+        const span2=document.getElementsByTagName('span')[1];
+        const span3=document.getElementsByTagName('span')[2];
+
+        menu.addEventListener('click',change);
+
+        function change(){
+            span2.classList.toggle('childs')
+            span2.classList.toggle('btn_close');
+            span1.classList.toggle('span1');
+            span3.classList.toggle('span2');
+        }
+    </script>
+</body>
+</html>

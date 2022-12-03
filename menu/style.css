@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.menu-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.childs{
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.span1{
+    display: none;
+}
+.span2{
+    display: none;
+}
+
+/* .btn_close{
+    animation-name: close;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+} */
+
+
+.btn_close::before{
+    display: inline-block;
+    content: '';
+    width: 300px;
+    height: 50px;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 150px;
+    border-radius: 4px;
+    animation-name: close1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes close{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.btn_close::after{
+    display: inline-block;
+    content: '';
+    width: 300px;
+    height: 50px;
+    background: #fff;
+    transform: rotate(45deg);
+    position: relative;
+    right:150px;
+    border-radius: 10%;
+    z-index: 1;
+    animation-name: close2;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes close1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes close2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

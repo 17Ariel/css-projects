@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Poppins,sans-serif;
+}
+
+#container{
+    height: 100vh;
+    background-color: #121312;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.card{
+    height: 340px;
+    width: 300px;
+    background :rgba(18,19,18,0.15);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 4px 6px rgba(22, 22, 26, 0.37);
+    display: flex;
+    flex-direction: column;
+}
+.card:hover{
+    transform: skew(20deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+h1,p{
+    padding: 8px 10px;
+    text-align: center;
+}

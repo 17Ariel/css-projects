@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #000;
+    border-radius: 4px;
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.6); */
+    animation-name: borders;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 0s;
+}
+
+@keyframes borders {
+    0%{
+        border-top-color: white;
+    }
+    25%{
+        border-right-color: white;
+    }
+    50%{
+        border-bottom-color: white;
+    }
+    75%{
+        border-left-color: white;
+    }
+    100%{
+        border-top-color: white;
+    }
+}
